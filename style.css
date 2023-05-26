@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: #272f47;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y:hidden;
+}
+    
+
+.logo{
+    padding-top: 25px;
+    margin-left: 150px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 180px;
+}
+
+.caja1{
+    padding: 2rem 0.5rem 4rem;
+    margin-left: 7rem;
+}
+
+text-area::-webkit-scrollbar{
+    display: none;
+}
+
+.text-area{
+    height: 400px;
+    border: none;
+    color: #dbadfe;
+    margin-top: 90px;
+    text-transform: lowercase;
+    resize: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.caja2{
+    flex-grow: 1;
+    font-size: 2.1rem;
+    margin-left: 4rem;
+}
+
+
+::placeholder { color: #f2cbf5fd;}
+    .text-area:focus{
+        outline: none;
+
+    }
+
+.mensaje{
+    background:#3e618772;
+    background-image: url("imagenes/Muneco1.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color:#98e5f8;
+    margin-left: 98px;
+    margin-top: 25px;
+    padding-left: 25px;
+    position: fixed;
+    resize: none;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.advertencia{
+    width: 360px;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 100px;
+    z-index: fixe;
+    }
+
+.m1{
+    font-size:24px;
+    font-family:inter;
+    color:#98e5f8;
+    margin-top: 350px;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.m2{
+    font-size:20px;
+    
+    font-family:inter;
+    color:#5c5190;
+}
+
+.botones{
+    display: flex;
+    margin-top: 79px;
+}
+
+.btn-encriptar{
+    background: #685ca7;
+    border: 1px solid #5c5190;
+    color: #f3cef5;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-desencriptar{
+    background: #f3cef5;
+    border: 1px solid #f3cef5;
+    border-radius: 24px;
+    color:#280351;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+
+
+.btn-copiar{ 
+    background: #f3cef5;   
+    border: 1px solid #f4bff7;
+    border-radius: 24px;
+    color:#280351;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 115px;
+    margin-top: 0;
+    position: absolute;
+    width: 328px;
+}
+
+
+
+.informacion{
+    color: #a9f5ff;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 120%;
+    
+}
+
+
+
+
+
+
+
+
