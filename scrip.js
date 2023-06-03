@@ -1,6 +1,3 @@
-const textArea = document.querySelector(".text-area");
-const mensaje = document.querySelector(".mensaje");
-
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"
@@ -8,43 +5,44 @@ const mensaje = document.querySelector(".mensaje");
 //La letra "u" es convertida para "ufat"
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = "";
-    mensaje.style.backgroundImage = "none"
+    let palabra = document.querySelector(".areaTexto").value;
+    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    let nuevaPalabra = "";
+    let nuevaLetra="";
+
+    for(let letra of palabra)
+    {
+        nuevaLetra=letra.toLowerCase();
+        for(let llave of matrizCodigo){
+
+            if (letra == llave [0]){                
+                nuevaLetra=llave[1];
+                break;
+            }
+            
+        }
+
+        nuevaPalabra+=nuevaLetra;
+        
+    }
+    document.querySelector(".mensaje").value = nuevaPalabra;
+    document.querySelector(".areaTexto").value = "";
 }
 
+
 function btnDesencriptar(){
-    const textoEncriptado = desencriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = "";
+    let palabra=document.querySelector(".areaTexto").value;
+    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    let nuevaPalabra = palabra.toLowerCase();
+    
+    for(let llave of matrizCodigo){
+        nuevaPalabra=nuevaPalabra.replace(llave[1],llave[0])
+    }
+    document.querySelector(".mensaje").value = nuevaPalabra;
 }
 
 function btnCopiar(){
-    textArea.value = mensaje.value
-    mensaje.value = "";
+    document.querySelector(".areaTexto").value = document.querySelector(".mensaje").value
+    document.querySelector(".mensaje").value = "";
 }
 
-function encriptar(stringEncriptada){
-    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
-    stringEncriptada = stringEncriptada.toLowerCase()
-
-    for(let i = 0; i < matrizCodigo.length; i++){
-        if(stringEncriptada.includes(matrizCodigo[i][0])){
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0],matrizCodigo[i][1])
-        }
-    }
-    return stringEncriptada
-}
-
-function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
-    stringDesencriptada = stringDesencriptada.toLowerCase()
-
-    for(let i = 0; i < matrizCodigo.length; i++){
-        if(stringDesencriptada.includes(matrizCodigo[i][1])){
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0])
-        }
-    }
-    return stringDesencriptada
-}

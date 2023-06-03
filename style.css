@@ -1,166 +1,302 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    background: #272f47;
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    overflow-y:hidden;
+
+header{
+    position: absolute;
+    width: 940px;
+    top: 60px;
+    left: 2%;
 }
+
+.textoLogo{
+    position: absolute;
+    margin-top: 20px;
+    color: aquamarine;
+    left: 220px;
+    font-family: "DynaPuff";
+    font-size: 40px;
     
-
-.logo{
-    padding-top: 25px;
-    margin-left: 150px;
-    width: 8%;
 }
 
-main{
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 180px;
-}
-
-.caja1{
-    padding: 2rem 0.5rem 4rem;
-    margin-left: 7rem;
-}
-
-text-area::-webkit-scrollbar{
-    display: none;
-}
-
-.text-area{
-    height: 400px;
-    border: none;
-    color: #dbadfe;
-    margin-top: 90px;
-    text-transform: lowercase;
-    resize: none;
-}
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.caja2{
-    flex-grow: 1;
-    font-size: 2.1rem;
-    margin-left: 4rem;
-}
-
-
-::placeholder { color: #f2cbf5fd;}
-    .text-area:focus{
-        outline: none;
-
-    }
-
-.mensaje{
-    background:#3e618772;
-    background-image: url("imagenes/Muneco1.png");
+    width: 940px;
+    background-image: url(imagenes/fondo.jpg);
     background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
-    color:#98e5f8;
-    margin-left: 98px;
-    margin-top: 25px;
-    padding-left: 25px;
-    position: fixed;
-    resize: none;
+    background-size: cover;
+    font-family:"Patrick Hand";
+    font-size: 30px;
 }
 
-.mensaje:focus{
+main{
+    width: 800px;
+    display: flex;
+}
+
+.muneca{
+    position:fixed;
+    width: 750px;
+    top: 190px;
+    left: 150px;
+}
+
+.titulo{
+    position: absolute;
+    top: 18%;
+    left: 46%;
+    color: rgb(165, 250, 249);
+    font-size: 50px;
+    font-family: "Rancho";
+}
+
+main section{
+    display: inline-block;
+    width: 18%;
+    position: absolute;
+    top: 28%;
+    left: 45%;    
+}
+.informacion{
+    color: #f3f93d;
+    font-size: 24px;
+}
+
+::placeholder{
+    color: #f5e5f6fd;
+    font-size: 30px;
+    font-family: "Rancho";
+}
+
+.areaTexto{
+    margin-top:17px;
+    height: 250px;
+    border-radius: 12px;
     outline: none;
+    border: none;
+    color:rgb(126, 254, 254);
+    font-size: 30px;
+    font-style: bold;
+    font-family: "Sniglet";
+    text-transform: lowercase;
+    resize: none;
+    inline-size: 100%;
+    background-color: #5fa4cf79;
+    padding: 10px;
 }
 
-.advertencia{
-    width: 360px;
-    text-align: center;
-    vertical-align: bottom;
-    margin: 100px;
-    z-index: fixe;
-    }
-
-.m1{
-    font-size:24px;
-    font-family:inter;
-    color:#98e5f8;
-    margin-top: 350px;
-    align-self: stretch;
-    flex-grow: 0;    
-}
-
-.m2{
-    font-size:20px;
-    
-    font-family:inter;
-    color:#5c5190;
-}
 
 .botones{
     display: flex;
-    margin-top: 79px;
-}
-
-.btn-encriptar{
-    background: #685ca7;
-    border: 1px solid #5c5190;
-    color: #f3cef5;
-    border-radius: 24px;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-}
-
-.btn-desencriptar{
-    background: #f3cef5;
-    border: 1px solid #f3cef5;
-    border-radius: 24px;
-    color:#280351;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-}
-
-
-
-.btn-copiar{ 
-    background: #f3cef5;   
-    border: 1px solid #f4bff7;
-    border-radius: 24px;
-    color:#280351;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 115px;
-    margin-top: 0;
-    position: absolute;
-    width: 328px;
-}
-
-
-
-.informacion{
-    color: #a9f5ff;
-    font-size: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
-    line-height: 120%;
+    margin-top: 35px;
     
 }
 
+.btnEncriptar{
+    background: #144d65;
+    border:none;
+    color: #f3cef5;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 20px;
+    width: 300px;
+    font-family:"Rancho";
+    font-size: 28px;
+    transition: 1s all;
+    
+}
+
+.btnEncriptar:hover{
+    background: #422756;
+    transform:scale(1.1);
+}
+
+.btnDesencriptar{
+    background: #144d65;
+    border:none;
+    color: #f3cef5;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 20px;
+    width: 300px;
+    font-family:"Rancho";
+    font-size: 28px;
+    transition: 1s all;
+}
+
+.btnDesencriptar:hover{
+    background: #422756;
+    transform:scale(1.1);
+}
+
+.contenedor2{
+    position: absolute;
+    top: 32%;
+    left: 65%;
+    color: #371154;
+}
 
 
+.mensaje{
+    background-color: #5fa4cf79;
+    height: 250px;
+    border: none;
+    outline: none;
+    color: #f2e1ff;
+    text-transform: lowercase;
+    resize: none;
+    inline-size: 100%;
+    font-size: 30px;
+    font-style: bold;
+    font-family: "Sniglet";
+    border-radius: 12px;
+    padding: 10px;
 
+}
 
+.btnCopiar{
+    margin-top: 35px;
+    position: absolute;
+    left: 25%;
+    background: #144d65;
+    border:none;
+    color: #f3cef5;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 20px;
+    width: 185px;
+    font-family:"Rancho";
+    font-size: 28px;
+    text-align: center;
+    transition: 1s all;
+}
 
+.btnCopiar:hover{
+    background: #501e73;
+    transform:scale(1.1);
+}
 
+footer{
+    width: 96%;
+    position: absolute;
+    top: 90%;
+    background-color: rgba(137, 87, 155, 0.712);
+    padding:2%;
+    margin: 0 auto;
+    font-family:"arial";
+    font-family:cursive;
+    color: rgb(243, 228, 249);
+    font-size: 14px;
+    text-align: center;
+}
+
+.link_GitHub{
+    color: #e8c2fa;
+    font-family:"Patrick Hand";
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    header{
+        width:90%;
+        top: 2%;
+    }
+    
+    .textoLogo{
+        position: relative;
+        top: 1px;
+        left: 60px;
+        font-size: 26px;
+    }
+
+    body{
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .muneca{
+        position:absolute;
+        top: 12%;
+        left: 60px;
+        width: 80%;
+    }
+
+    .titulo{
+        position: absolute;
+        top: 37%;
+        left: 20%;
+        font-size: 30px;
+        
+    }
+
+    main section{
+        width: 82%;
+        left: 7%;
+        position:absolute;  
+        top: 44%;
+        margin-top: 5px;
+    }
+
+    .informacion{
+        font-size: 16px;
+    }
+    
+    ::placeholder{
+        font-size: 22px;
+    }
+
+    .areaTexto{
+        height: 150px;
+        font-size: 25px;
+        margin-top: 4px;
+    }
+
+    .botones{
+        margin-top: 5px;
+        
+    }
+
+    .btnEncriptar , .btnDesencriptar{
+        height: 50px;
+        width: 350px;
+        font-size: 22px;
+        background: #08719d;
+        
+    }
+    
+    .contenedor2{
+        position: absolute;
+        top: 74%;
+        left: 7%;
+    }
+
+    .mensaje{
+        font-size: 25px;
+        height: 150px;
+    }
+
+    .btnCopiar{
+        height: 50px;
+        margin-left: 20px;
+        width: 350  px;
+        font-size: 22px;
+        margin-top: 5px;
+        background: #08719d;
+    }
+        
+    footer{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        background-color: rgb(137, 87, 155);
+        
+    }
+
+}
 

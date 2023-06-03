@@ -1,46 +1,71 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge🪄</title>
+    <link rel="icon" href="imagenes/favicon.png">
+
+    <link rel="stylesheet" href="reset.css  ">
     <link rel="stylesheet" href="style.css">
+    <script src="scrip.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&&family=Snigledisplay=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Sniglet&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <img class="logo" src="imagenes/Logo1.png" alt="logo Alura" >
+        <img src="imagenes/Logo1.png" alt="logoAlura">
+        <p class="textoLogo">Encriptador de Texto</p>
     </header>
-
+    
     <main>
 
-        <section class="caja1">
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <div>
-                <h6 class="informacion">⚠ Solo letras minúsculas y sin acentos</h6>
-            </div>
+        <img class="muneca" src="imagenes/muneca.png" alt="Muneca buscando">
+        <div class="titulo">
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
         
+        <section class="contenedor1">
+            <div class="informacion">
+                <h6>⚠ Solo letras minúsculas y sin acentos</h6>
+            </div>
+            
+            
+            <textarea class="areaTexto" id="" cols="30" rows="10"placeholder="Ingrese el texto aquí"></textarea>
+
             <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btnEncriptar" onclick="btnEncriptar()">&#128274; Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">&#128275; Desencriptar</button>
             </div>
         </section>
 
-        <section class="caja2">
-            <textarea class="mensaje" cols="20" rows="15"></textarea>
-            <div class="advertencia">
-                <p class = "m1">Ningun mensaje fue encontrado</p>
-                <p class="m2">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-            <div class botonCopiar>
-                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
-            </div>
-        </section>  
+        <section class="contenedor2">
 
-    </main>
-    <script src="scrip.js"></script>
+            <textarea class="mensaje" id="" cols="30" rows="10" disabled></textarea>
+            
+
+            <div class="botonCopiar">
+                <button class="btnCopiar" onclick="btnCopiar()"> 📄 Copiar</button>
+            </div>
+
+            
+            
+        </section>
+
+    </main>        
 </body>
+
+<footer>
+    <p>Challenge - Encriptador de Texto | Oracle Next Education y  alura Latam  | Creado por <a href="https://github.com/IvoneForero" class="link_GitHub" target="_blank">Ivone Forero</a>
+    </p>
+    </footer>
 </html>
